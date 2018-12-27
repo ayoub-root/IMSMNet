@@ -141,7 +141,7 @@ if __name__ == '__main__':
             a_list = programWeb.parse_html(page_source)
 
             for a_item in a_list:
-                print(a_item)
+                print(a_item) #sss
                 try:
                     page_source = programWeb.get_page(a_item)
 
