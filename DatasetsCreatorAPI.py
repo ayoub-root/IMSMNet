@@ -122,7 +122,7 @@ class ProgrammableWebScrapy:
 
 if __name__ == '__main__':
     basic_url = 'https://www.programmableweb.com/category/all/apis?page='
-    total_pages = 727
+    total_pages = 728
 
     programWeb = ProgrammableWebScrapy()
 	
@@ -132,7 +132,7 @@ if __name__ == '__main__':
     with open("ProgrammWebScrapy.txt", "a") as w:
         # w.write("[\n")
 
-        for i in range(726, total_pages):
+        for i in range(1, total_pages):
             print("Page: %d" % i)
             url = basic_url + str(i)
 
