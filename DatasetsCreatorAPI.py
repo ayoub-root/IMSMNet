@@ -141,6 +141,7 @@ if __name__ == '__main__':
             a_list = programWeb.parse_html(page_source)
 
             for a_item in a_list:
+                print(a_item)
                 try:
                     page_source = programWeb.get_page(a_item)
 
@@ -151,10 +152,10 @@ if __name__ == '__main__':
                     w.write(json_item)
                 except:
                     continue
-                time.sleep(2)
-            time.sleep(3)
+                time.sleep(1)
+            time.sleep(2)
         w.write("]\n")
-    # print("All a list len: %d" % len(all_a_list))
+    print("All a list len: %d" % len(all_a_list))
 
     # json_data = []
 
